@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Welcome to the Library!</header>
+    <section id="display-container" class = "invisible">
+        <div class="row" id="header-row">
+            <div class="row-element">Title</div>
+            <div class="row-element">Author</div>
+            <div class="row-element">Pages</div>
+            <div class="row-element">Finished</div>
+        </div>
+    </section>
+
+    <section id="add-container">
+            <div class="form-element">
+                <label for="book-title">Title</label>
+                <input type="text" id="book-title" name="book-title" required> 
+            </div>
+            <div class="form-element">
+                <label for="book-author">Author</label>
+                <input type="text" id="book-author" name="book-author" required>
+            </div>
+            <div class="form-element">
+                <label for="book-pages">Number of Pages</label>
+                <input type="number" id="book-pages" name="book-pages" required>
+            </div>
+            <div class="form-element">
+                <label for="book-read">Read?</label>
+                <input type="checkbox" id="book-read" name="book-read">
+            </div>
+            <div class="form-element">
+                <input type="submit" value="Add Book" id="form-submit">
+            </div>
+            
+
+    </section>
+
+    <div id="reset-button-div">
+        <button id="reset-button">Reset Added Books</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
