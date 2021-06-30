@@ -5,11 +5,13 @@ const inputAuthor = document.getElementById("book-author");
 const inputPages = document.getElementById("book-pages");
 const inputRead = document.getElementById("book-read");
 
-function Book(title, author, pages, read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+class Book{
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 function updateLocalStorage(){
